@@ -1,368 +1,368 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on darwin)" generated="2025-05-22T22:04:40.130940" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on darwin)" generated="2025-05-22T22:13:18.399365" rpa="false" schemaversion="5">
 <suite id="s1" name="Filter.Feature" source="/Users/devo/Robot Framework Project/saucedemo-tests/tests/filter.feature.robot">
 <test id="s1-t1" name="Filter produk berdasarkan nama A ke Z" line="13">
 <kw name="Given Pengguna membuka halaman login" owner="login_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:40.229998" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-05-22T22:13:18.503954" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${SAUCE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-22T22:04:40.229884" elapsed="1.147153"/>
+<status status="PASS" start="2025-05-22T22:13:18.503848" elapsed="1.198172"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-22T22:04:41.377447" elapsed="0.375989"/>
+<status status="PASS" start="2025-05-22T22:13:19.702389" elapsed="0.371189"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-22T22:04:41.754231" elapsed="0.010765"/>
+<status status="PASS" start="2025-05-22T22:13:20.073861" elapsed="0.009484"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:40.229732" elapsed="1.535376"/>
+<status status="PASS" start="2025-05-22T22:13:18.503701" elapsed="1.579773"/>
 </kw>
 <kw name="When Pengguna memasukkan username dan password" owner="login_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:41.766521" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-22T22:13:20.084351" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:41.766041" elapsed="0.130683"/>
+<status status="PASS" start="2025-05-22T22:13:20.084188" elapsed="0.099823"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:41.897095" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-05-22T22:13:20.184384" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:41.896900" elapsed="0.076581"/>
+<status status="PASS" start="2025-05-22T22:13:20.184143" elapsed="0.035356"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:41.765392" elapsed="0.208175"/>
+<status status="PASS" start="2025-05-22T22:13:20.083927" elapsed="0.135659"/>
 </kw>
 <kw name="And Klik tombol login" owner="login_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:41.974011" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-22T22:13:20.220058" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:41.973900" elapsed="0.062373"/>
+<status status="PASS" start="2025-05-22T22:13:20.219929" elapsed="0.091894"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:41.973742" elapsed="0.062852"/>
+<status status="PASS" start="2025-05-22T22:13:20.219750" elapsed="0.092187"/>
 </kw>
 <kw name="And Pengguna memilih filter produk &quot;Name (A to Z)&quot;" owner="filter_keywords" source_name="And Pengguna memilih filter produk &quot;${label}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class=product_sort_container</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-22T22:04:42.038113" elapsed="0.020550"/>
+<status status="PASS" start="2025-05-22T22:13:20.312394" elapsed="0.016421"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:42.059053" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (A to Z).</msg>
+<msg time="2025-05-22T22:13:20.329067" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (A to Z).</msg>
 <arg>class=product_sort_container</arg>
 <arg>${label}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-22T22:04:42.058833" elapsed="0.039845"/>
+<status status="PASS" start="2025-05-22T22:13:20.328923" elapsed="0.029774"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:42.037237" elapsed="0.061510"/>
+<status status="PASS" start="2025-05-22T22:13:20.312173" elapsed="0.046593"/>
 </kw>
 <kw name="Then Produk pertama yang tampil adalah &quot;Sauce Labs Backpack&quot;" owner="filter_keywords" source_name="Then Produk pertama yang tampil adalah &quot;${expected}&quot;">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:42.110814" level="INFO">${first_product} = Sauce Labs Backpack</msg>
+<msg time="2025-05-22T22:13:20.371237" level="INFO">${first_product} = Sauce Labs Backpack</msg>
 <var>${first_product}</var>
 <arg>xpath=(//div[@data-test='inventory-item-name'])[1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:42.099246" elapsed="0.011596"/>
+<status status="PASS" start="2025-05-22T22:13:20.359074" elapsed="0.012190"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${first_product}</arg>
 <arg>${expected}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-22T22:04:42.110958" elapsed="0.000200"/>
+<status status="PASS" start="2025-05-22T22:13:20.371381" elapsed="0.000167"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T22:04:44.113144" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-22T22:13:22.373972" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T22:04:42.111216" elapsed="2.011887"/>
+<status status="PASS" start="2025-05-22T22:13:20.371602" elapsed="2.002720"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-22T22:04:44.129748" elapsed="0.103281"/>
+<status status="PASS" start="2025-05-22T22:13:22.374992" elapsed="0.107432"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:42.098981" elapsed="2.134130"/>
+<status status="PASS" start="2025-05-22T22:13:20.358917" elapsed="2.123687"/>
 </kw>
 <tag>filter</tag>
-<status status="PASS" start="2025-05-22T22:04:40.229176" elapsed="4.004148"/>
+<status status="PASS" start="2025-05-22T22:13:18.503159" elapsed="3.979794"/>
 </test>
 <test id="s1-t2" name="Filter produk berdasarkan nama Z ke A" line="21">
 <kw name="Given Pengguna membuka halaman login" owner="login_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:44.234440" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-05-22T22:13:22.484344" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${SAUCE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-22T22:04:44.234240" elapsed="1.054205"/>
+<status status="PASS" start="2025-05-22T22:13:22.484166" elapsed="1.062084"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.288799" elapsed="0.377215"/>
+<status status="PASS" start="2025-05-22T22:13:23.546600" elapsed="0.376681"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.666341" elapsed="0.009394"/>
+<status status="PASS" start="2025-05-22T22:13:23.923448" elapsed="0.007011"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:44.234074" elapsed="1.441795"/>
+<status status="PASS" start="2025-05-22T22:13:22.483956" elapsed="1.446608"/>
 </kw>
 <kw name="When Pengguna memasukkan username dan password" owner="login_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:45.676792" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-22T22:13:23.931245" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.676595" elapsed="0.096411"/>
+<status status="PASS" start="2025-05-22T22:13:23.931079" elapsed="0.097397"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:45.773325" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-05-22T22:13:24.029299" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.773146" elapsed="0.033742"/>
+<status status="PASS" start="2025-05-22T22:13:24.028828" elapsed="0.035061"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:45.676333" elapsed="0.130627"/>
+<status status="PASS" start="2025-05-22T22:13:23.930822" elapsed="0.133137"/>
 </kw>
 <kw name="And Klik tombol login" owner="login_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:45.807339" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-22T22:13:24.064392" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.807250" elapsed="0.048282"/>
+<status status="PASS" start="2025-05-22T22:13:24.064276" elapsed="0.048119"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:45.807103" elapsed="0.048500"/>
+<status status="PASS" start="2025-05-22T22:13:24.064104" elapsed="0.048448"/>
 </kw>
 <kw name="And Pengguna memilih filter produk &quot;Name (Z to A)&quot;" owner="filter_keywords" source_name="And Pengguna memilih filter produk &quot;${label}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class=product_sort_container</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.855925" elapsed="0.014584"/>
+<status status="PASS" start="2025-05-22T22:13:24.114466" elapsed="0.017684"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:45.871123" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (Z to A).</msg>
+<msg time="2025-05-22T22:13:24.133076" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (Z to A).</msg>
 <arg>class=product_sort_container</arg>
 <arg>${label}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.870753" elapsed="0.059372"/>
+<status status="PASS" start="2025-05-22T22:13:24.132540" elapsed="0.047994"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:45.855769" elapsed="0.074507"/>
+<status status="PASS" start="2025-05-22T22:13:24.112873" elapsed="0.067804"/>
 </kw>
 <kw name="Then Produk pertama yang tampil adalah &quot;Test.allTheThings() T-Shirt (Red)&quot;" owner="filter_keywords" source_name="Then Produk pertama yang tampil adalah &quot;${expected}&quot;">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:45.943915" level="INFO">${first_product} = Test.allTheThings() T-Shirt (Red)</msg>
+<msg time="2025-05-22T22:13:24.193470" level="INFO">${first_product} = Test.allTheThings() T-Shirt (Red)</msg>
 <var>${first_product}</var>
 <arg>xpath=(//div[@data-test='inventory-item-name'])[1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.930642" elapsed="0.013305"/>
+<status status="PASS" start="2025-05-22T22:13:24.181020" elapsed="0.012494"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${first_product}</arg>
 <arg>${expected}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.944076" elapsed="0.000144"/>
+<status status="PASS" start="2025-05-22T22:13:24.193707" elapsed="0.000162"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T22:04:47.945050" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-22T22:13:26.194885" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T22:04:45.944272" elapsed="2.001020"/>
+<status status="PASS" start="2025-05-22T22:13:24.193927" elapsed="2.001399"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-22T22:04:47.946018" elapsed="0.124438"/>
+<status status="PASS" start="2025-05-22T22:13:26.196133" elapsed="0.093683"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:45.930471" elapsed="2.140050"/>
+<status status="PASS" start="2025-05-22T22:13:24.180868" elapsed="2.109020"/>
 </kw>
 <tag>filter</tag>
-<status status="PASS" start="2025-05-22T22:04:44.233690" elapsed="3.836943"/>
+<status status="PASS" start="2025-05-22T22:13:22.483292" elapsed="3.806729"/>
 </test>
 <test id="s1-t3" name="Filter produk berdasarkan harga low to high" line="29">
 <kw name="Given Pengguna membuka halaman login" owner="login_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:48.071250" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-05-22T22:13:26.290787" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${SAUCE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-22T22:04:48.071148" elapsed="0.960487"/>
+<status status="PASS" start="2025-05-22T22:13:26.290676" elapsed="1.004155"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.031969" elapsed="0.368961"/>
+<status status="PASS" start="2025-05-22T22:13:27.295184" elapsed="0.378804"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.401260" elapsed="0.008175"/>
+<status status="PASS" start="2025-05-22T22:13:27.674164" elapsed="0.009470"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:48.071014" elapsed="1.338574"/>
+<status status="PASS" start="2025-05-22T22:13:26.290532" elapsed="1.393231"/>
 </kw>
 <kw name="When Pengguna memasukkan username dan password" owner="login_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:49.410326" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-22T22:13:27.684422" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.410162" elapsed="0.110789"/>
+<status status="PASS" start="2025-05-22T22:13:27.684260" elapsed="0.102044"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:49.521317" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-05-22T22:13:27.786778" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.521147" elapsed="0.034826"/>
+<status status="PASS" start="2025-05-22T22:13:27.786537" elapsed="0.034263"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:49.409917" elapsed="0.146130"/>
+<status status="PASS" start="2025-05-22T22:13:27.684030" elapsed="0.136836"/>
 </kw>
 <kw name="And Klik tombol login" owner="login_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:49.556436" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-22T22:13:27.821241" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.556343" elapsed="0.046338"/>
+<status status="PASS" start="2025-05-22T22:13:27.821148" elapsed="0.046571"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:49.556195" elapsed="0.046885"/>
+<status status="PASS" start="2025-05-22T22:13:27.821004" elapsed="0.047005"/>
 </kw>
 <kw name="And Pengguna memilih filter produk &quot;Price (low to high)&quot;" owner="filter_keywords" source_name="And Pengguna memilih filter produk &quot;${label}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class=product_sort_container</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.603964" elapsed="0.018157"/>
+<status status="PASS" start="2025-05-22T22:13:27.868999" elapsed="0.012503"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:49.623030" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (low to high).</msg>
+<msg time="2025-05-22T22:13:27.881776" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (low to high).</msg>
 <arg>class=product_sort_container</arg>
 <arg>${label}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.622260" elapsed="0.053133"/>
+<status status="PASS" start="2025-05-22T22:13:27.881621" elapsed="0.049832"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:49.603766" elapsed="0.071773"/>
+<status status="PASS" start="2025-05-22T22:13:27.868326" elapsed="0.063191"/>
 </kw>
 <kw name="Then Produk pertama yang tampil adalah &quot;Sauce Labs Onesie&quot;" owner="filter_keywords" source_name="Then Produk pertama yang tampil adalah &quot;${expected}&quot;">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:49.687231" level="INFO">${first_product} = Sauce Labs Onesie</msg>
+<msg time="2025-05-22T22:13:27.944512" level="INFO">${first_product} = Sauce Labs Onesie</msg>
 <var>${first_product}</var>
 <arg>xpath=(//div[@data-test='inventory-item-name'])[1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.676214" elapsed="0.011043"/>
+<status status="PASS" start="2025-05-22T22:13:27.931812" elapsed="0.012736"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${first_product}</arg>
 <arg>${expected}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.687368" elapsed="0.000128"/>
+<status status="PASS" start="2025-05-22T22:13:27.944666" elapsed="0.000138"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T22:04:51.689638" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-22T22:13:29.946668" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T22:04:49.687551" elapsed="2.002262"/>
+<status status="PASS" start="2025-05-22T22:13:27.944856" elapsed="2.002185"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-22T22:04:51.690199" elapsed="0.088233"/>
+<status status="PASS" start="2025-05-22T22:13:29.947795" elapsed="0.090376"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:49.675877" elapsed="2.102645"/>
+<status status="PASS" start="2025-05-22T22:13:27.931669" elapsed="2.106574"/>
 </kw>
 <tag>filter</tag>
-<status status="PASS" start="2025-05-22T22:04:48.070781" elapsed="3.707906"/>
+<status status="PASS" start="2025-05-22T22:13:26.290257" elapsed="3.748128"/>
 </test>
 <test id="s1-t4" name="Filter produk berdasarkan harga high to low" line="37">
 <kw name="Given Pengguna membuka halaman login" owner="login_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:51.779562" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-05-22T22:13:30.039199" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${SAUCE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-22T22:04:51.779408" elapsed="1.023771"/>
+<status status="PASS" start="2025-05-22T22:13:30.039085" elapsed="0.988791"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-22T22:04:52.803530" elapsed="0.378345"/>
+<status status="PASS" start="2025-05-22T22:13:31.028205" elapsed="0.376584"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.182100" elapsed="0.010548"/>
+<status status="PASS" start="2025-05-22T22:13:31.405024" elapsed="0.009767"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:51.779226" elapsed="1.413559"/>
+<status status="PASS" start="2025-05-22T22:13:30.038914" elapsed="1.376013"/>
 </kw>
 <kw name="When Pengguna memasukkan username dan password" owner="login_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:53.193692" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-22T22:13:31.415648" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.193437" elapsed="0.096499"/>
+<status status="PASS" start="2025-05-22T22:13:31.415470" elapsed="0.096957"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:53.290293" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-05-22T22:13:31.513014" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.290076" elapsed="0.037189"/>
+<status status="PASS" start="2025-05-22T22:13:31.512780" elapsed="0.037390"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:53.193163" elapsed="0.134535"/>
+<status status="PASS" start="2025-05-22T22:13:31.415231" elapsed="0.135270"/>
 </kw>
 <kw name="And Klik tombol login" owner="login_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:53.328119" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-22T22:13:31.550905" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.328014" elapsed="0.045726"/>
+<status status="PASS" start="2025-05-22T22:13:31.550810" elapsed="0.044602"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:53.327854" elapsed="0.046213"/>
+<status status="PASS" start="2025-05-22T22:13:31.550654" elapsed="0.044828"/>
 </kw>
 <kw name="And Pengguna memilih filter produk &quot;Price (high to low)&quot;" owner="filter_keywords" source_name="And Pengguna memilih filter produk &quot;${label}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class=product_sort_container</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.374867" elapsed="0.017432"/>
+<status status="PASS" start="2025-05-22T22:13:31.595929" elapsed="0.016552"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:53.392636" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (high to low).</msg>
+<msg time="2025-05-22T22:13:31.613327" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (high to low).</msg>
 <arg>class=product_sort_container</arg>
 <arg>${label}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.392426" elapsed="0.054173"/>
+<status status="PASS" start="2025-05-22T22:13:31.612777" elapsed="0.048020"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:53.374687" elapsed="0.071982"/>
+<status status="PASS" start="2025-05-22T22:13:31.595756" elapsed="0.065140"/>
 </kw>
 <kw name="Then Produk pertama yang tampil adalah &quot;Sauce Labs Fleece Jacket&quot;" owner="filter_keywords" source_name="Then Produk pertama yang tampil adalah &quot;${expected}&quot;">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-05-22T22:04:53.459629" level="INFO">${first_product} = Sauce Labs Fleece Jacket</msg>
+<msg time="2025-05-22T22:13:31.674617" level="INFO">${first_product} = Sauce Labs Fleece Jacket</msg>
 <var>${first_product}</var>
 <arg>xpath=(//div[@data-test='inventory-item-name'])[1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.447140" elapsed="0.012517"/>
+<status status="PASS" start="2025-05-22T22:13:31.661230" elapsed="0.013431"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${first_product}</arg>
 <arg>${expected}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.459797" elapsed="0.000160"/>
+<status status="PASS" start="2025-05-22T22:13:31.674819" elapsed="0.000163"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T22:04:55.460493" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-22T22:13:33.676166" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T22:04:53.460024" elapsed="2.000894"/>
+<status status="PASS" start="2025-05-22T22:13:31.675052" elapsed="2.001517"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-22T22:04:55.461664" elapsed="0.081728"/>
+<status status="PASS" start="2025-05-22T22:13:33.677293" elapsed="0.081963"/>
 </kw>
-<status status="PASS" start="2025-05-22T22:04:53.446948" elapsed="2.096510"/>
+<status status="PASS" start="2025-05-22T22:13:31.661079" elapsed="2.098263"/>
 </kw>
 <tag>filter</tag>
-<status status="PASS" start="2025-05-22T22:04:51.778878" elapsed="3.764686"/>
+<status status="PASS" start="2025-05-22T22:13:30.038571" elapsed="3.720915"/>
 </test>
 <doc>Test filter produk berdasarkan nama dan harga</doc>
-<status status="PASS" start="2025-05-22T22:04:40.131471" elapsed="15.412434"/>
+<status status="PASS" start="2025-05-22T22:13:18.399921" elapsed="15.360180"/>
 </suite>
 <statistics>
 <total>
