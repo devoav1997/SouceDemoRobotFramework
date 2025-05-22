@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Test login dan akses halaman produk dengan BDD style
 Library           SeleniumLibrary
-Resource          ../resources/keywords.robot
+Resource          ../resources/login_keywords.robot
 Resource          ../variables/urls.robot
 
 *** Variables ***
