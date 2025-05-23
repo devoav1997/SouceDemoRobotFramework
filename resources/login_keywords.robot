@@ -6,9 +6,10 @@ Given Pengguna membuka halaman login
     Call Method    ${options}    add_argument    --disable-extensions
     Call Method    ${options}    add_argument    --disable-save-password-bubble
     Call Method    ${options}    add_argument    --no-default-browser-check
-    ${arg}=    Set Variable    --password-store=basic
-    Call Method    ${options}    add_argument    ${arg}
-    ${prefs}=    Create Dictionary    credentials_enable_service=${False}    profile.password_manager_enabled=${False}
+    Call Method    ${options}    add_argument    --guest
+    ${prefs}=    Create Dictionary
+    ...    credentials_enable_service=${False}
+    ...    profile.password_manager_enabled=${False}
     Call Method    ${options}    add_experimental_option    prefs    ${prefs}
     Create Webdriver    Chrome    options=${options}
     Go To    ${SAUCE_URL}
