@@ -1,4 +1,3 @@
-
 # 🧪 SauceDemoRobotFramework
 
 ## 🤖 Robot Framework BDD - Automation for SauceDemo
@@ -10,6 +9,7 @@ Proyek ini merupakan implementasi **automation testing** dengan **Robot Framewor
 - Add to Cart
 - View Shopping Cart
 - Remove product from cart
+- Checkout produk
 
 ---
 
@@ -19,20 +19,22 @@ Proyek ini merupakan implementasi **automation testing** dengan **Robot Framewor
 
 saucedemo-tests/
 ├── tests/
-│   ├── login.feature.robot         # Test case login
-│   ├── filter.feature.robot        # Test case filter produk
-│   └── cart.feature.robot          # Test case keranjang belanja
+│   ├── login.feature.robot          # Test case login
+│   ├── filter.feature.robot         # Test case filter produk
+│   ├── cart.feature.robot           # Test case keranjang belanja
+│   └── checkout.feature.robot       # Test case checkout produk
 ├── resources/
-│   ├── login\_keywords.robot        # Keyword untuk login
-│   ├── filter\_keywords.robot       # Keyword untuk filter produk
-│   └── cart\_keywords.robot         # Keyword untuk cart
+│   ├── login\_keywords.robot         # Keyword untuk login
+│   ├── filter\_keywords.robot        # Keyword untuk filter produk
+│   ├── cart\_keywords.robot          # Keyword untuk keranjang
+│   └── checkout\_keywords.robot      # Keyword untuk checkout
 ├── variables/
-│   └── urls.robot                  # Variabel global (misal URL)
-├── venv/                           # Virtual environment (opsional)
-├── output.xml                      # Hasil eksekusi
-├── log.html                        # Log hasil tes
-├── report.html                     # Ringkasan hasil tes
-└── README.md                       # Dokumentasi proyek
+│   └── urls.robot                   # Variabel global (misal URL)
+├── venv/                            # Virtual environment (opsional)
+├── output.xml                       # Hasil eksekusi
+├── log.html                         # Log hasil tes
+├── report.html                      # Ringkasan hasil tes
+└── README.md                        # Dokumentasi proyek
 
 ````
 
@@ -68,6 +70,7 @@ pip install webdriver-manager
 robot tests/login.feature.robot
 robot tests/filter.feature.robot
 robot tests/cart.feature.robot
+robot tests/checkout.feature.robot
 ```
 
 ---
@@ -88,19 +91,26 @@ robot tests/cart.feature.robot
 
 ### Cart:
 
-* ✅ Add product ke keranjang
+* ✅ Tambahkan produk ke keranjang
 * ✅ Lihat isi keranjang
 * ✅ Hapus produk dari keranjang
+
+### Checkout:
+
+* ✅ Checkout berhasil hingga selesai
+* ❌ Checkout gagal karena First Name kosong
+* ❌ Checkout gagal karena Last Name kosong
+* ❌ Checkout gagal karena Zip Code kosong
 
 ---
 
 ## 🧪 Hasil Eksekusi
 
-Setelah test dijalankan, Robot Framework akan menghasilkan:
+Setelah test dijalankan, Robot Framework akan menghasilkan file:
 
-* `output.xml` → hasil test detail
-* `log.html` → log lengkap step-by-step
-* `report.html` → ringkasan test (jumlah pass/fail)
+* `output.xml` → Hasil detail setiap langkah test
+* `log.html` → Log eksekusi lengkap
+* `report.html` → Ringkasan test (jumlah passed / failed)
 
 ---
 
@@ -108,6 +118,7 @@ Setelah test dijalankan, Robot Framework akan menghasilkan:
 
 * Python 3.7+
 * Google Chrome (versi terbaru)
-* chromedriver (dikelola otomatis oleh `webdriver-manager`)
+* chromedriver (otomatis dikelola oleh `webdriver-manager`)
 
 ---
+

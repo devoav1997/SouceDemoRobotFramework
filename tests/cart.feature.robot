@@ -7,6 +7,7 @@ Library           BuiltIn
 Resource          ../resources/login_keywords.robot
 Resource          ../resources/cart_keywords.robot
 Resource          ../variables/urls.robot
+Test Teardown     Close Browser
 
 *** Variables ***
 ${USERNAME}       standard_user
